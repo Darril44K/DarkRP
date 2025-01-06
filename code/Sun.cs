@@ -25,12 +25,12 @@ public sealed class Sun : Component,Component.ExecuteInEditor
         float pitchChange = rotationSpeed * deltaTime;
 
         // Mise à jour de la rotation actuelle du GameObject
-        Rotation currentRotation = GameObject.Transform.Rotation;
+        Rotation currentRotation = GameObject.WorldRotation;
         Rotation pitchRotation = Rotation.FromAxis(Vector3.Right, pitchChange);
         Rotation newRotation = pitchRotation * currentRotation;
 
         // Appliquer la nouvelle rotation au GameObject
-        GameObject.Transform.Rotation = newRotation;
+        GameObject.WorldRotation = newRotation;
 
         // Récupérer le pitch actuel
         float currentPitch = newRotation.Pitch();
@@ -45,13 +45,13 @@ public sealed class Sun : Component,Component.ExecuteInEditor
         const float dayStart = 360f;    // Commence à 360° (lever de soleil)
 
         // Loguer le pitch pour le débogage
-        Log.Info($"Current Pitch: {currentPitch}");
+        //Log.Info($"Current Pitch: {currentPitch}");
 
         // Déterminer si c'est la nuit ou le jour
         if (currentPitch >= nightStart && currentPitch < 360f)
         {
             // C'est la nuit
-            Log.Info("Night");
+           // Log.Info("Night");
            /* SkyBox.SkyMaterial = test;*/
             SkyBox.SkyMaterial = SkyBoxMaterial;
             SkyBox.Tint = Color.Gray;
@@ -61,7 +61,7 @@ public sealed class Sun : Component,Component.ExecuteInEditor
         else if (currentPitch < dayStart || currentPitch >= 0f)
         {
             // C'est le jour
-            Log.Info("Day");
+            //Log.Info("Day");
             SkyBox.SkyMaterial = day;
             SkyBox.Tint = Color.White;
             DaySoundAmbient.StartSound();

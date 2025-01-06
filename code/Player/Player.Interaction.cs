@@ -25,7 +25,7 @@ namespace Sandbox.GameSystems.Player
 
 		void Interact()
 		{
-			var start = _camera.Transform.Position;
+			var start = _camera.WorldPosition;
 			var direction = _camera.Transform.World.Forward;
 			var end = start + direction * InteractRange;
 

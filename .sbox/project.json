@@ -1,0 +1,127 @@
+{
+  "folder-metadata": {
+    "Value": "{\u0022C:\\\\Program Files (x86)\\\\Steam\\\\steamapps\\\\common\\\\sbox\\\\Recents\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022C:\\\\Program Files (x86)\\\\Steam\\\\steamapps\\\\common\\\\sbox\\\\Everything\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022.\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022C:\\\\Program Files (x86)\\\\Steam\\\\steamapps\\\\common\\\\sbox\\\\addons\\\\citizen\\\\assets\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022C:\\\\Program Files (x86)\\\\Steam\\\\steamapps\\\\common\\\\sbox\\\\core\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Libraries\\\\tux.linuxfix\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Libraries\\\\facepunch.playercontroller\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\audio\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\data\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\fonts\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Map\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Materials\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Models\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\prefab\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\scenes\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\weapons\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022code\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Localization\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022ProjectSettings\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022code\\\\Entities\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022code\\\\Persistence\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022code\\\\Player\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022code\\\\Resources\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022code\\\\UI\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022code\\\\Utilities\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022code\\\\Weapons\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Libraries\\\\tux.linuxfix\\\\Code\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Libraries\\\\tux.linuxfix\\\\Editor\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Libraries\\\\tux.linuxfix\\\\ProjectSettings\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Libraries\\\\facepunch.playercontroller\\\\Code\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Libraries\\\\facepunch.playercontroller\\\\Editor\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Libraries\\\\facepunch.playercontroller\\\\UnitTests\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\data\\\\jobs\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Map\\\\DowntownV2\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Map\\\\landscape\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Materials\\\\darkrp_main\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Materials\\\\default\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Materials\\\\Models\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Materials\\\\signs\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Models\\\\darkrp_main\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Models\\\\darkrp_map\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Models\\\\Elevator\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Models\\\\props_doors\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Models\\\\props_windows\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Models\\\\skybox\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\Models\\\\Urban\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\prefab\\\\props_doors\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022Assets\\\\weapons\\\\default\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022},\u0022assets\\\\models\\\\darkrp_main\\\\moneyprinter\u0022:{\u0022Color\u0022:\u00220.46667,0.73333,1,1\u0022,\u0022Icon\u0022:\u0022\u0022}}",
+    "Timeout": 1738773503,
+    "DeleteAt": 0
+  },
+  "AssetBrowser.History": {
+    "Value": "[\u0022D:\\\\S\\u0026box_RP\\\\DarkRP\\\\Assets\u0022,\u0022d:\\\\s\\u0026box_rp\\\\darkrp\\\\assets\\\\models\\\\darkrp_map\u0022,\u0022D:\\\\S\\u0026box_RP\\\\DarkRP\\\\Assets\u0022,\u0022D:\\\\S\\u0026box_RP\\\\DarkRP\\\\Assets\\\\prefab\u0022]",
+    "Timeout": 1738773484,
+    "DeleteAt": 0
+  },
+  "AssetBrowser.HistoryIdx": {
+    "Value": "3",
+    "Timeout": 1738773484,
+    "DeleteAt": 0
+  },
+  "Window.SboxSceneEditor.Dock": {
+    "Value": "{\u0022floatingWindows\u0022:[],\u0022mainWrapper\u0022:{\u0022geometry\u0022:\u0022AdnQywADAAAAAAAAAAAAAAAACdIAAATeAAAAAAAAAAAAAAnSAAAE3gAAAAAAAAAACgAAAAAAAAAAAAAACdIAAATe\u0022,\u0022splitter\u0022:{\u0022items\u0022:[{\u0022currentIndex\u0022:0,\u0022objects\u0022:[{\u0022data\u0022:null,\u0022managedType\u0022:\u0022SceneTreeWidget\u0022,\u0022name\u0022:\u0022Hierarchy\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022PanelInspectorWidget\u0022,\u0022name\u0022:\u0022UI Panels\u0022}],\u0022type\u0022:\u0022area\u0022},{\u0022items\u0022:[{\u0022items\u0022:[{\u0022currentIndex\u0022:1,\u0022objects\u0022:[{\u0022data\u0022:null,\u0022managedType\u0022:\u0022\u0022,\u0022name\u0022:\u0022GameFrame\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022SceneDock\u0022,\u0022name\u0022:\u0022SceneDock:scenes/minimal.scene\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022SceneDock\u0022,\u0022name\u0022:\u0022SceneDock:prefab/player.prefab\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022SceneDock\u0022,\u0022name\u0022:\u0022SceneDock:prefab/door.prefab\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022SceneDock\u0022,\u0022name\u0022:\u0022SceneDock:prefab/printer.prefab\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022SceneDock\u0022,\u0022name\u0022:\u0022SceneDock:prefab/money.prefab\u0022}],\u0022type\u0022:\u0022area\u0022},{\u0022currentIndex\u0022:1,\u0022objects\u0022:[{\u0022data\u0022:null,\u0022managedType\u0022:\u0022MainAssetBrowser\u0022,\u0022name\u0022:\u0022Asset Browser\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022ConsoleWidget\u0022,\u0022name\u0022:\u0022Console\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022MixerDock\u0022,\u0022name\u0022:\u0022Mixer\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022LibraryManagerDock\u0022,\u0022name\u0022:\u0022Library Manager\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022MainCloudBrowser\u0022,\u0022name\u0022:\u0022Cloud Browser\u0022},{\u0022data\u0022:null,\u0022managedType\u0022:\u0022PerformanceDock\u0022,\u0022name\u0022:\u0022Performance\u0022}],\u0022type\u0022:\u0022area\u0022}],\u0022state\u0022:\u0022AAAA/wAAAAEAAAACAAADLgAAAs8A/////wEAAAACAA==\u0022,\u0022type\u0022:\u0022splitter\u0022},{\u0022currentIndex\u0022:0,\u0022objects\u0022:[{\u0022data\u0022:null,\u0022managedType\u0022:\u0022Inspector\u0022,\u0022name\u0022:\u0022Inspector\u0022}],\u0022type\u0022:\u0022area\u0022}],\u0022state\u0022:\u0022AAAA/wAAAAEAAAACAAAGbQAAAgkA/////wEAAAABAA==\u0022,\u0022type\u0022:\u0022splitter\u0022}],\u0022state\u0022:\u0022AAAA/wAAAAEAAAACAAABmwAACjQA/////wEAAAABAA==\u0022,\u0022type\u0022:\u0022splitter\u0022}},\u0022toolWindowManagerStateFormat\u0022:1}",
+    "Timeout": 1738777222,
+    "DeleteAt": 0
+  },
+  "SceneView.Viewport0.Settings": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-677.7738,-1215.139,319.7142\u0022,\u0022CameraRotation\u0022:\u0022-0.3292344,0.3314243,0.6231292,0.627274\u0022,\u0022View\u0022:0,\u0022RenderMode\u0022:0,\u0022WireframeMode\u0022:false,\u0022EnablePostProcessing\u0022:true,\u0022ShowGrid\u0022:true,\u0022GridOpacity\u0022:0.2,\u0022GridAxis\u0022:0,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1738777222,
+    "DeleteAt": 0
+  },
+  "gizmo.settings": {
+    "Value": "{\u0022EditMode\u0022:\u0022position\u0022,\u0022Selection\u0022:true,\u0022ViewMode\u0022:\u00223d\u0022,\u0022GizmosEnabled\u0022:true,\u0022GizmoScale\u0022:1,\u0022GridSpacing\u0022:32,\u0022SnapToGrid\u0022:false,\u0022SnapToAngles\u0022:true,\u0022AngleSpacing\u0022:15,\u0022GlobalSpace\u0022:false,\u0022DebugActionGraphs\u0022:false}",
+    "Timeout": 1738777222,
+    "DeleteAt": 0
+  },
+  "SceneView.Layout": {
+    "Value": "{\u0022Layout\u0022:0,\u0022SplitterState\u0022:[]}",
+    "Timeout": 1738777222,
+    "DeleteAt": 0
+  },
+  "scene.lastopened": {
+    "Value": "[\u0022scenes/minimal.scene\u0022,\u0022prefab/player.prefab\u0022,\u0022prefab/door.prefab\u0022,\u0022prefab/printer.prefab\u0022,\u0022prefab/money.prefab\u0022]",
+    "Timeout": 1738773497,
+    "DeleteAt": 0
+  },
+  "scenes/minimal.scene.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-677.7738,-1215.139,319.7142\u0022,\u0022CameraRotation\u0022:\u0022-0.3292344,0.3314243,0.6231292,0.627274\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1738777222,
+    "DeleteAt": 0
+  },
+  ".Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-267.452,-379.653,297.7903\u0022,\u0022CameraRotation\u0022:\u0022-0.1448582,0.2860239,0.4279631,0.8450171\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1738777221,
+    "DeleteAt": 0
+  },
+  "prefab/player.prefab.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022104.1673,-83.21011,97.56085\u0022,\u0022CameraRotation\u0022:\u0022-0.2006789,0.08332847,0.9014798,0.3743241\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1738777222,
+    "DeleteAt": 0
+  },
+  "prefab/day_night_cycle.prefab.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-0.6736481,-0.6736482,0.9526824\u0022,\u0022CameraRotation\u0022:\u0022-0.1464466,0.3535534,0.3535534,0.8535534\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1738772397,
+    "DeleteAt": 0
+  },
+  "prefab/door.prefab.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u002255.31679,-82.0106,85.50021\u0022,\u0022CameraRotation\u0022:\u0022-0.1260942,0.04268033,0.9387803,0.3177581\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1738777222,
+    "DeleteAt": 0
+  },
+  "AssetBrowser.Model.History": {
+    "Value": "[\u0022D:\\\\S\\u0026box_RP\\\\DarkRP\\\\Assets\u0022,\u0022d:\\\\s\\u0026box_rp\\\\darkrp\\\\assets\\\\models\\\\darkrp_map\u0022,\u0022d:\\\\s\\u0026box_rp\\\\darkrp\\\\assets\\\\models\\\\darkrp_main\u0022,\u0022d:\\\\s\\u0026box_rp\\\\darkrp\\\\assets\\\\models\\\\darkrp_main\u0022]",
+    "Timeout": 1738773508,
+    "DeleteAt": 0
+  },
+  "AssetBrowser.Model.HistoryIdx": {
+    "Value": "3",
+    "Timeout": 1738773508,
+    "DeleteAt": 0
+  },
+  "CloudBrowser.CloudBrowser.ViewMode": {
+    "Value": "3",
+    "Timeout": 1738772443,
+    "DeleteAt": 0
+  },
+  "CloudBrowser.CloudBrowser.ShowJunkFiles": {
+    "Value": "false",
+    "Timeout": 1738772443,
+    "DeleteAt": 0
+  },
+  "CloudBrowser.CloudBrowser.HideNonAssets": {
+    "Value": "false",
+    "Timeout": 1738772443,
+    "DeleteAt": 0
+  },
+  "CloudBrowser.CloudBrowser.ShowRecursiveFiles": {
+    "Value": "false",
+    "Timeout": 1738772443,
+    "DeleteAt": 0
+  },
+  "prefab/printer.prefab.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-65.38795,89.0955,34.30323\u0022,\u0022CameraRotation\u0022:\u00220.07956748,0.1582022,-0.4422181,0.8792521\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1738777222,
+    "DeleteAt": 0
+  },
+  "prefab/money.prefab.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u00223.634247,48.9472,-16.38534\u0022,\u0022CameraRotation\u0022:\u0022-0.1076982,-0.09612446,-0.7382426,0.6589075\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1738777222,
+    "DeleteAt": 0
+  },
+  "CloudBrowser.Model..ViewMode": {
+    "Value": "3",
+    "Timeout": 1738773515,
+    "DeleteAt": 0
+  },
+  "CloudBrowser.Model..ShowJunkFiles": {
+    "Value": "false",
+    "Timeout": 1738773515,
+    "DeleteAt": 0
+  },
+  "CloudBrowser.Model..HideNonAssets": {
+    "Value": "false",
+    "Timeout": 1738773515,
+    "DeleteAt": 0
+  },
+  "CloudBrowser.Model..ShowRecursiveFiles": {
+    "Value": "false",
+    "Timeout": 1738773515,
+    "DeleteAt": 0
+  }
+}

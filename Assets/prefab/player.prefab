@@ -10,9 +10,17 @@
         "__type": "Sandbox.SkinnedModelRenderer",
         "__guid": "1c4f939a-38aa-4312-bd78-f2b09adba55d",
         "BodyGroups": 341,
+        "CreateAttachments": false,
         "CreateBoneObjects": false,
         "Model": "models/citizen/citizen.vmdl",
         "Morphs": {},
+        "Parameters": {
+          "bools": {},
+          "ints": {},
+          "floats": {},
+          "vectors": {},
+          "rotations": {}
+        },
         "RenderOptions": {
           "GameLayer": true,
           "OverlayLayer": false,
@@ -20,6 +28,9 @@
           "AfterUILayer": false
         },
         "RenderType": "On",
+        "Sequence": {
+          "Name": null
+        },
         "Tint": "1,1,1,1",
         "UseAnimGraph": true
       },
@@ -56,6 +67,37 @@
       {
         "__type": "Sandbox.Voice",
         "__guid": "ec6c78ca-d23a-4cc2-987f-408d2efe9f23",
+        "Distance": 15000,
+        "Falloff": [
+          {
+            "x": 0,
+            "y": 1,
+            "in": 0,
+            "out": -1.8,
+            "mode": "Mirrored"
+          },
+          {
+            "x": 0.05,
+            "y": 0.22,
+            "in": 3.5,
+            "out": -3.5,
+            "mode": "Mirrored"
+          },
+          {
+            "x": 0.2,
+            "y": 0.04,
+            "in": 0.16,
+            "out": -0.16,
+            "mode": "Mirrored"
+          },
+          {
+            "x": 1,
+            "y": 0,
+            "in": 0,
+            "out": 0,
+            "mode": "Mirrored"
+          }
+        ],
         "Loopback": false,
         "Mode": "PushToTalk",
         "MorphScale": 3,
@@ -66,6 +108,10 @@
           "component_id": "1c4f939a-38aa-4312-bd78-f2b09adba55d",
           "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678",
           "component_type": "SkinnedModelRenderer"
+        },
+        "VoiceMixer": {
+          "Name": "unknown",
+          "Id": "00000000-0000-0000-0000-000000000000"
         },
         "Volume": 2,
         "WorldspacePlayback": true
@@ -183,7 +229,8 @@
             "Center": "0,0,32",
             "IsTrigger": false,
             "Scale": "32,32,64",
-            "Static": false
+            "Static": false,
+            "SurfaceVelocity": "0,0,0"
           }
         ]
       },
@@ -198,8 +245,9 @@
             "__guid": "53b84b42-dc6a-49dc-aaeb-f9a86b9092c5",
             "AutoScreenScale": true,
             "OnComponentFixedUpdate": {
-              "__version": 7,
+              "__version": 8,
               "__guid": "c56d28f3-33ce-4f1f-8c8b-c5904cd8255a",
+              "__changeId": 0,
               "UserData": {
                 "Title": "On Component Fixed Update",
                 "ReferencedComponentTypes": [
@@ -276,6 +324,7 @@
                   "DstName": "condition"
                 },
                 {
+                  "Id": 12,
                   "Value": "Score",
                   "DstId": 2,
                   "DstName": "action"
@@ -293,6 +342,7 @@
                   "DstName": "_target"
                 },
                 {
+                  "Id": 13,
                   "Value": true,
                   "DstId": 6,
                   "DstName": "_value"
@@ -310,6 +360,7 @@
                   "DstName": "_target"
                 },
                 {
+                  "Id": 14,
                   "Value": false,
                   "DstId": 7,
                   "DstName": "_value"
@@ -323,8 +374,9 @@
               ]
             },
             "OnComponentStart": {
-              "__version": 7,
+              "__version": 8,
               "__guid": "66e36109-b932-4366-bccb-5ccfa0d61af1",
+              "__changeId": 0,
               "UserData": {
                 "Title": "On Component Start",
                 "ReferencedComponentTypes": []
@@ -467,8 +519,9 @@
             "InfoCredits": "We extend our thanks to all the contributors for their efforts: Sousou, QueenPM, Stefan, HankKitts, dancore, Bozy, IRLadderGoat, Mangrogred, Dada, Red (SebbeJohansson), goodmittens, EuroBlue, Dimmer, Grepid, and Fnasp.",
             "InfoNotes": "Welcome to DarkRP, an open-source, non-serious and fun roleplay game. We\u0027re drawing inspiration from the well-known game mode available on Garry\u0027s Mod. This game is still work in progress so please expect some bugs and inconsistencies.\n\nIf you\u0027d like to help out, you can join us on Discord or GitHub. Whether you\u0027re a developer, designer, or just a player, your involvement is highly valuable to us!",
             "OnComponentDisabled": {
-              "__version": 7,
+              "__version": 8,
               "__guid": "86ae15ed-598d-40f6-8392-45ff34f3d151",
+              "__changeId": 0,
               "UserData": {
                 "Title": "On Component Disabled",
                 "ReferencedComponentTypes": []
@@ -534,6 +587,7 @@
                   "DstName": "_this"
                 },
                 {
+                  "Id": 6,
                   "Value": "sounds/kenney/ui/ui.navigate.back.sound",
                   "DstId": 1,
                   "DstName": "soundEvent"
@@ -565,8 +619,9 @@
               ]
             },
             "OnComponentEnabled": {
-              "__version": 7,
+              "__version": 8,
               "__guid": "77d47dbb-f4ce-44f1-94d3-54578333f7ec",
+              "__changeId": 0,
               "UserData": {
                 "Title": "On Component Enabled",
                 "ReferencedComponentTypes": []
@@ -632,6 +687,7 @@
                   "DstName": "_this"
                 },
                 {
+                  "Id": 6,
                   "Value": "sounds/kenney/ui/ui.navigate.forward.sound",
                   "DstId": 1,
                   "DstName": "soundEvent"
@@ -726,8 +782,9 @@
             "__type": "Nameplates",
             "__guid": "1d680a3c-87ed-4a89-b2a6-cd08f38931ed",
             "OnComponentStart": {
-              "__version": 7,
+              "__version": 8,
               "__guid": "214aed12-7b14-446d-8052-42752a9b6e74",
+              "__changeId": 0,
               "UserData": {
                 "Title": "On Component Start",
                 "ReferencedComponentTypes": []
@@ -861,8 +918,25 @@
           {
             "__type": "Sandbox.SoundPointComponent",
             "__guid": "4f91538b-962b-48ab-b29f-e8ce958d31e8",
+            "Distance": 512,
             "DistanceAttenuation": false,
             "DistanceAttenuationOverride": false,
+            "Falloff": [
+              {
+                "x": 0,
+                "y": 1,
+                "in": 3.1415927,
+                "out": -3.1415927,
+                "mode": "Mirrored"
+              },
+              {
+                "x": 1,
+                "y": 0,
+                "in": 0,
+                "out": 0,
+                "mode": "Mirrored"
+              }
+            ],
             "Force2d": false,
             "MaxRepeatTime": 1,
             "MinRepeatTime": 1,
@@ -908,11 +982,35 @@
         ]
       }
     ],
-    "__variables": []
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
   },
   "ShowInMenu": false,
   "MenuPath": null,
   "MenuIcon": null,
+  "DontBreakAsTemplate": false,
   "ResourceVersion": 1,
   "__references": [],
   "__version": 1

@@ -18,7 +18,7 @@ public partial class Player
 	[Property, Group("Movement")] public Collider Collider { get; set; }
 	[Property, Group("Movement")] public CharacterController CharacterController { get; set; }
 	[Property, Group("Movement")] public CitizenAnimationHelper AnimationHelper { get; set; }
-	[Sync, HostSync] public bool IsNoClip { get; set; }
+	[Sync] public bool IsNoClip { get; set; }
 	[Sync] public Angles EyeAngles { get; set; }
 	[Sync] public bool _crouching { get; set; }
 	[Sync] private Vector3 _wishVelocity { get; set; }
@@ -41,7 +41,7 @@ public partial class Player
 		if (!IsProxy)
 		{
 			MouseInput();
-			Transform.Rotation = new Angles( 0, EyeAngles.yaw, 0 );
+			WorldRotation = new Angles( 0, EyeAngles.yaw, 0 );
 		}
 
 		UpdateAnimation();
@@ -150,7 +150,7 @@ public partial class Player
 			cc.Velocity *= 1.0f - (friction * Time.Delta);
 			cc.Velocity = cc.Velocity.ClampLength(CurrentMoveSpeed);
 
-			cc.Transform.Position += _wishVelocity * Time.Delta;
+			cc.WorldPosition += _wishVelocity * Time.Delta;
 			// cc.Move();
 			return;
 		}
@@ -189,7 +189,7 @@ public partial class Player
 		}
 
 		// Don't walk through other players, let them push you out of the way
-		var pushVelocity = PlayerPusher.GetPushVector(Transform.Position + Vector3.Up * 40.0f, Scene, GameObject);
+		var pushVelocity = PlayerPusher.GetPushVector(WorldPosition + Vector3.Up * 40.0f, Scene, GameObject);
 		if (!pushVelocity.IsNearlyZero())
 		{
 			var travelDot = cc.Velocity.Dot(pushVelocity.Normal);
@@ -251,7 +251,7 @@ public partial class Player
 			// places by crouch jumping that we couldn't.
 			if (!CharacterController.IsOnGround)
 			{
-				CharacterController.MoveTo(Transform.Position += Vector3.Up * DuckHeight, false);
+				CharacterController.MoveTo(WorldPosition += Vector3.Up * DuckHeight, false);
 				Transform.ClearInterpolation();
 				_eyeHeight -= DuckHeight;
 			}
@@ -276,16 +276,16 @@ public partial class Player
 		var targetEyeHeight = _crouching ? 28 : 64;
 		_eyeHeight = _eyeHeight.LerpTo(targetEyeHeight, RealTime.Delta * 10.0f);
 
-		var targetCameraPos = Transform.Position + new Vector3(0, 0, _eyeHeight);
+		var targetCameraPos = WorldPosition + new Vector3(0, 0, _eyeHeight);
 
 		// smooth view z, so when going up and down stairs or ducking, it's smooth af
 		if (_lastUngrounded > 0.2f)
 		{
-			targetCameraPos.z = _camera.Transform.Position.z.LerpTo(targetCameraPos.z, RealTime.Delta * 25.0f);
+			targetCameraPos.z = _camera.WorldPosition.z.LerpTo(targetCameraPos.z, RealTime.Delta * 25.0f);
 		}
 
-		_camera.Transform.Position = targetCameraPos;
-		_camera.Transform.Rotation = EyeAngles;
+		_camera.WorldPosition = targetCameraPos;
+		_camera.WorldRotation = EyeAngles;
 		_camera.FieldOfView = Preferences.FieldOfView;
 	}
 

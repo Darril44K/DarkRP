@@ -29,9 +29,9 @@ namespace GameSystems
 
 
 		// TODO: YOU CAN'T SYNC COMPLEX OBJECTS
-		[HostSync] public NetDictionary<Guid, NetworkPlayer> Players { get; set; } = new();
+		[Sync] public NetDictionary<Guid, NetworkPlayer> Players { get; set; } = new();
 
-		[HostSync] public NetDictionary<string, UserGroup> UserGroups { get; set; } = new()
+		[Sync] public NetDictionary<string, UserGroup> UserGroups { get; set; } = new()
 		{
 			{ "user", new UserGroup( "user", "User", PermissionLevel.User, Color.White ) },
 			{ "moderator", new UserGroup( "moderator", "Moderator", PermissionLevel.Moderator, Color.Yellow ) },
@@ -213,7 +213,7 @@ namespace GameSystems
 			return foundNetworkPlayer;
 		}
 
-		[Broadcast]
+		[Rpc.Broadcast]
 		public void SelectJob( Guid ownerId, JobResource job )
 		{
 			var networkPlayer = GetPlayerByConnectionId( ownerId );

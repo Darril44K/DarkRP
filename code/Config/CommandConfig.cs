@@ -11,6 +11,7 @@ namespace GameSystems.Config
 	{
 		private readonly Dictionary<string, ICommandConfig> _commands = new()
 		{
+			
 			{ "clear", new Command(
 						name: "clear",
 						description: "Clears the chat",
@@ -50,7 +51,7 @@ namespace GameSystems.Config
 				{ "givemoney", new Command(
 						name: "givemoney",
 						description: "Gives the player money",
-						permissionLevel: PermissionLevel.Admin,
+						permissionLevel: PermissionLevel.User,
 						commandFunction: (player, scene, args) =>
 						{
 								// Get the player stats
@@ -92,11 +93,12 @@ namespace GameSystems.Config
 				{ "setmoney", new Command(
 						name: "setmoney",
 						description: "Set a player's money",
-						permissionLevel: PermissionLevel.Admin,
+						permissionLevel: PermissionLevel.User,
 						commandFunction: (player, scene, args) =>
 						{
 								// Get the player stats
 								var playerStats = player.Components.Get<Sandbox.GameSystems.Player.Player>();
+								
 								if (playerStats == null) return false;
 
 								// Get the 2nd parameter for player
@@ -260,7 +262,7 @@ namespace GameSystems.Config
 									}
 
 									// Clone the MoneyPrefab and position it
-									var moneyObject = configManager.MoneyPrefab.Clone(player.Transform.Position);
+									var moneyObject = configManager.MoneyPrefab.Clone(player.WorldPosition);
 									if (moneyObject == null)
 									{
 										Log.Error("Failed to clone MoneyPrefab.");
@@ -328,13 +330,13 @@ namespace GameSystems.Config
 								if (playerTransform == null) return false;
 
 								// Calculate the forward direction based on the player's rotation
-								var forwardDirection = playerTransform.Rotation * Vector3.Forward;
+								var forwardDirection = playerTransform.World.Rotation * Vector3.Forward;
 
 								// Calculate the teleport position (100 units in front of the player)
-								var position = playerTransform.Position + forwardDirection * 100;
+								var position = playerTransform.World.Position + forwardDirection * 100;
 
 								// Set the target player's position to the calculated position
-								targetPlayer.GameObject.Transform.Position = position;
+								targetPlayer.GameObject.WorldPosition = position;
 
 								// Notify both players
 								targetPlayer.GameObject.Components.Get<Sandbox.GameSystems.Player.Player>()?.SendMessage($"You have been teleported by {playerStats.GetNetworkPlayer().Name}.");
@@ -392,7 +394,7 @@ namespace GameSystems.Config
 			return commandNames.ToArray();
 		}
 
-		[Broadcast( NetPermission.HostOnly )]
+		[Rpc.Broadcast]
 		public void ExecuteCommand(string commandName, GameObject player, Scene scene, string[] args)
 		{
 			// Get the PlayerStats component. This is required for all players. Verifies the player is a player.

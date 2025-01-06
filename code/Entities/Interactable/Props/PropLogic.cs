@@ -51,8 +51,8 @@ namespace Entity.Interactable.Props
 		{
 			_propToolManager = propToolManager;
 			_prop = prop;
-			_position = prop.Transform.Position;
-			_rotation = prop.Transform.Rotation;
+			_position = prop.WorldPosition;
+			_rotation = prop.WorldRotation;
 			_name = name;
 		}
 

@@ -17,20 +17,20 @@ namespace Entity.Interactable.Door
 
 		Rotation originalRotation;
 
-		[Property, HostSync] public NetList<Player> DoorOwners {get; set;} = new();
-		[Property, HostSync] public NetList<Player> CanOwn {get; set;} = new();
+		[Property, Sync] public NetList<Player> DoorOwners {get; set;} = new();
+		[Property, Sync] public NetList<Player> CanOwn {get; set;} = new();
 
-		[Property, HostSync] public int Price { get; set; } = 100;
+		[Property, Sync] public int Price { get; set; } = 100;
 
 		[Property] public DoorMenu DoorMenu {get; set;}
-		[HostSync] public string DoorTitle {get; set;} = "";
+		[Sync] public string DoorTitle {get; set;} = "";
 
 		public bool ShowTextIfOwner {get; set;} = false;
 		public bool ShowTextIfCanOwn {get; set;} = false;
 
 		protected override void OnAwake()
 		{
-			originalRotation = Door.Transform.Rotation;
+			originalRotation = Door.WorldRotation;
 		}
 
 		public override void InteractUse( SceneTraceResult tr, GameObject player )
@@ -71,7 +71,7 @@ namespace Entity.Interactable.Door
 			if (IsDoorOwner(player.Components.Get<Player>())) { UnlockDoor(); } else { KnockOnDoor(); }
 		}
 		
-		[Authority]
+		[Rpc.Owner]
 		public void PurchaseDoor(Player player)
 		{
 			if (CanOwn.Contains(player)) CanOwn.Remove(player);
@@ -88,7 +88,7 @@ namespace Entity.Interactable.Door
 
 		}
 
-		[Authority]
+		[Rpc.Owner]
 		public void SellDoor(Player player)
 		{
 			if (player == DoorOwners[0]) 
@@ -115,13 +115,13 @@ namespace Entity.Interactable.Door
 
 		}
 
-		[Authority]
+		[Rpc.Owner]
 		public void SetDoorTitle(string title)
 		{
 			DoorTitle = title;
 		}
 
-		[Broadcast]
+		[Rpc.Owner]
 		public void AddDoorOwner(Player player)
 		{
 			if (!CanOwn.Contains(player))
@@ -135,7 +135,7 @@ namespace Entity.Interactable.Door
 			}
 		}
 		
-		[Broadcast]
+		[Rpc.Owner]
 		public void RemoveDoorOwner(Player player)
 		{
 			if (CanOwn.Contains(player))
@@ -148,16 +148,16 @@ namespace Entity.Interactable.Door
 			player?.SendMessage( $"Your ownership of {DoorOwners[0].Name}'s door was revoked." );
 		}
 
-		[Broadcast]
+		[Rpc.Owner]
 		private void OpenCloseDoor(GameObject player)
 		{
 			if ( Door == null ) { return; }
-			float yaw = Door.Transform.Rotation.Yaw();
+			float yaw = Door.WorldRotation.Yaw();
 			Rotation rotationIncrement = Rotation.From( 0, 3, 0 );
 
-			Vector3 directionToDoor = (Door.Transform.Position - player.Transform.Position).Normal;
+			Vector3 directionToDoor = (Door.WorldPosition - player.WorldPosition).Normal;
 
-			Vector3 forward = Door.Transform.Rotation.Forward;
+			Vector3 forward = Door.WorldRotation.Forward;
 			float dotProduct = Vector3.Dot( forward, directionToDoor );
 
 			var shouldOpenForward = dotProduct > 0;
@@ -187,11 +187,11 @@ namespace Entity.Interactable.Door
 			
 			if (open)
 			{
-				float yaw = Door.Transform.Rotation.Yaw();
+				float yaw = Door.WorldRotation.Yaw();
 				
 				if (yaw < originalRotation.Yaw() + 90 && yaw > originalRotation.Yaw() - 90)
 				{
-					Door.Transform.Rotation *= _rotationIncrement;
+					Door.WorldRotation *= _rotationIncrement;
 				}
 				else
 				{
@@ -204,17 +204,17 @@ namespace Entity.Interactable.Door
 
 			if (close)
 			{
-				float yaw = Door.Transform.Rotation.Yaw();
+				float yaw = Door.WorldRotation.Yaw();
 
 				if (yaw < originalRotation.Yaw() + 3 && yaw > originalRotation.Yaw() - 3)
 				{
-					Door.Transform.Rotation = originalRotation;
+					Door.WorldRotation = originalRotation;
 					IsOpen = false;
 					close = false;
 				}
 				else
 				{
-					Door.Transform.Rotation *= _rotationIncrement;
+					Door.WorldRotation *= _rotationIncrement;
 				}
 			}
 
@@ -231,7 +231,7 @@ namespace Entity.Interactable.Door
 			return DoorOwners.Count > 0;
 		}
 
-		[Broadcast]
+		[Rpc.Owner]
 		public void LockDoor()
 		{
 			if (IsUnlocked)
@@ -241,7 +241,7 @@ namespace Entity.Interactable.Door
 			}
 		}
 
-		[Broadcast]
+		[Rpc.Owner]
 		public void UnlockDoor()
 		{
 			if (!IsUnlocked)
@@ -252,19 +252,19 @@ namespace Entity.Interactable.Door
 			
 		}
 
-		[Broadcast]
+		[Rpc.Owner]
 		private void KnockOnDoor()
 		{
 			Sound.Play( "audio/knock.sound", Door.Transform.World.Position );
 		}
 
-		[Broadcast]
+		[Rpc.Owner]
 		void ShowIfOwner(bool show)
 		{
 			ShowTextIfOwner = show;
 		}
 
-		[Broadcast]
+		[Rpc.Owner]
 		void ShowCanOwn(bool show)
 		{
 			ShowTextIfCanOwn = show;

@@ -67,7 +67,7 @@ namespace Entity.Interactable.Printer
 			var rotationAmount = PrinterFanSpeed * Time.Delta;
 
 			// Apply the rotation relative to the GameObject's current rotation
-			PrinterFan.Transform.Rotation *= Rotation.FromAxis( Vector3.Left, -rotationAmount );
+			PrinterFan.WorldRotation *= Rotation.FromAxis( Vector3.Left, -rotationAmount );
 		}
 
 		// Method to set the current printer type and update its color
@@ -78,7 +78,7 @@ namespace Entity.Interactable.Printer
 			UpdatePrinterColor();
 		}
 
-		[Broadcast]
+		[Rpc.Broadcast]
 		public void ResetPrinterMoney()
 		{
 			PrinterCurrentMoney = 0f;

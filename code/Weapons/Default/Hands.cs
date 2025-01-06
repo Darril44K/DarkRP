@@ -80,9 +80,9 @@ namespace Sandbox.Weapons.Default
 			// Calculate the offset from the object's position to its center
 			var centerOffset = _heldBody.MassCenter - _heldBody.Position;
 			// Calculate the target position, adjusting for the center offset
-			var holdPosition = _camera.Transform.Position + _camera.Transform.World.Forward * _heldDistance - centerOffset;
+			var holdPosition = _camera.WorldPosition + _camera.Transform.World.Forward * _heldDistance - centerOffset;
 			// Check if the object is too far away from the hold position
-			var heldDistance = Vector3.DistanceBetween( _held.Transform.Position, holdPosition );
+			var heldDistance = Vector3.DistanceBetween( _held.WorldPosition, holdPosition );
 			if ( heldDistance > InteractRange )
 			{
 				Release();
@@ -106,7 +106,7 @@ namespace Sandbox.Weapons.Default
 		private void AttemptGrab()
 		{
 			// Starting position of the line (camera position)
-			var start = _camera.Transform.Position;
+			var start = _camera.WorldPosition;
 			// Direction of the line (the direction the camera is facing)
 			var direction = _camera.Transform.World.Forward;
 			// Calculate the end position based on direction and interact range
@@ -151,7 +151,7 @@ namespace Sandbox.Weapons.Default
 			var bounds = target.GetBounds();
 			var boundsExtents = bounds.Extents;
 			_heldDistance = HoldDistance + Math.Max( Math.Max( boundsExtents.x, boundsExtents.y ), boundsExtents.z );
-			_heldRotation = target.Transform.Rotation;
+			_heldRotation = target.WorldRotation;
 			_held = target;
 			_heldBody = targetBody;
 			_heldCenter = bounds.Center;

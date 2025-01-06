@@ -94,7 +94,7 @@ namespace Entity.Interactable.Props
 		/// Sets the cloud model for this prop and initializes it.
 		/// </summary>
 		/// <param name="cloudModel">The identifier of the cloud model to set.</param>
-		[Broadcast]
+		[Rpc.Broadcast]
 		public void SetCloudModel( string cloudModel )
 		{
 			CloudModel = cloudModel;

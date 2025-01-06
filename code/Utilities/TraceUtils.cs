@@ -14,7 +14,7 @@ public static class TraceUtils
 		{
 
 			// Starting position of the line (camera position)
-			var start = origin.Position;
+			var start = origin.World.Position;
 
 			// Direction of the line (the direction the camera is facing)
 			var direction = origin.World.Forward;

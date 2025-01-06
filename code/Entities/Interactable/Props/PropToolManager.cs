@@ -135,7 +135,7 @@ namespace Sandbox.Entities.Interactable.Props
 			position += spawnOffset;
 
 			GameObject prop = PropPrefab.Clone( position );
-			prop.Transform.Rotation = rotation;
+			prop.WorldRotation = rotation;
 
 			var PropHelper = prop.Components.GetOrCreate<PropHelper>();
 			if ( PropHelper != null )

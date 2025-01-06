@@ -29,8 +29,8 @@ public partial class Player : Component, Component.INetworkSpawn
 
 	protected override void OnStart()
 	{
-		GameController.Instance.AddPlayer( GameObject, GameObject.Network.OwnerConnection);
-		Name = this.Network.OwnerConnection.DisplayName;
+		GameController.Instance.AddPlayer( GameObject, GameObject.Network.Owner);
+		Name = this.Network.Owner.DisplayName;
 		
 		OnStartMovement();
 

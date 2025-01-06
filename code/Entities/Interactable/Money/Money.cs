@@ -43,7 +43,7 @@ public sealed class Money : BaseEntity
     /// <summary>
     /// Destroys the money entity after it has been collected.
     /// </summary>
-    [Broadcast]
+    [Rpc.Broadcast]
     public void DestroyMoney()
     {
         this.GameObject.Destroy();

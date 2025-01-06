@@ -339,7 +339,7 @@
 
                     if (propToolManager != null)
                     {
-                        Vector3 position = GameObject.Transform.Position + Vector3.Up * 50;
+                        Vector3 position = GameObject.WorldPosition + Vector3.Up * 50;
                         Rotation rotation = Rotation.Identity;
 
                         propToolManager.SpawnCloudModel(fullIdent, position, rotation);

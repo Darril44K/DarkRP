@@ -85,7 +85,7 @@ public partial class Player
 
 
 	// Drop the item from the inventory
-	[Broadcast] public void DropItem()
+	[Rpc.Broadcast] public void DropItem()
 	{
 		// TODO
 	}

@@ -19,11 +19,11 @@
         if (!Network.IsOwner) { ShowNameplate(); } 
     }
 
-    [Broadcast]
+    [Rpc.Broadcast]
     public void ShowNameplate()
 
     {
-        if (!Network.IsOwner && GameObject.Parent.IsValid) { Name = GameObject.Parent.Network.OwnerConnection.DisplayName; } 
+        if (!Network.IsOwner && GameObject.Parent.IsValid) { Name = GameObject.Parent.Network.Owner.DisplayName; } 
     }
 
 	/// <summary>

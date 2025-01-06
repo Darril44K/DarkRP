@@ -11,7 +11,7 @@ public class Flashlight : Component
 		//Updates Tilt on Flashlight because parenting to camera
 		//Parents all flashlights to the 1 camera there is because each client
 		//Uses the same camera
-		_light.Transform.Rotation = _player.EyeAngles.ToRotation();
+		_light.WorldRotation = _player.EyeAngles.ToRotation();
 	}
 
 	protected override void OnFixedUpdate()
@@ -30,7 +30,7 @@ public class Flashlight : Component
 		}
 	}
 
-	[Broadcast( NetPermission.OwnerOnly )]
+	[Rpc.Broadcast( NetFlags.OwnerOnly )]
 	public void ToggleFlashlight()
 	{
 		//Inverts the state of the light

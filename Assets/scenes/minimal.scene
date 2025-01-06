@@ -2,6 +2,21 @@
   "__guid": "d89eae88-156c-4a4e-ab7b-cd4358296acb",
   "GameObjects": [
     {
+      "__guid": "d801cf15-befa-49f7-9633-37b37e6a5854",
+      "Flags": 0,
+      "Name": "Scene Information",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SceneInformation",
+          "__guid": "9aa1421f-8e17-422e-ac50-450baa78d43f",
+          "Description": "",
+          "SceneTags": "",
+          "Title": "minimal"
+        }
+      ]
+    },
+    {
       "__guid": "020b0bff-a918-4691-bc31-8fd32f5c9c00",
       "Flags": 0,
       "Name": "day_night_cycle",
@@ -38,8 +53,10 @@
           "__type": "Sandbox.Bloom",
           "__guid": "d73ef723-c888-41d4-802e-f797c79318be",
           "BloomColor": {
+            "blend": "Linear",
             "color": [
               {
+                "t": 0,
                 "c": "1,1,1,1"
               },
               {
@@ -51,11 +68,18 @@
           },
           "BloomCurve": [
             {
-              "y": 0.5
+              "x": 0,
+              "y": 0.5,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
             },
             {
               "x": 1,
-              "y": 1
+              "y": 1,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
             }
           ],
           "Mode": "Additive",
@@ -222,7 +246,6 @@
           "__guid": "b30a039a-e57c-4647-9327-5c8bd879b8ad",
           "Flags": 0,
           "Name": "Roof-Vent",
-          "Position": "0,0,0",
           "Enabled": true
         },
         {
@@ -2124,6 +2147,58 @@
           "__PrefabVariables": {}
         }
       ]
+    },
+    {
+      "__guid": "3999d5bb-f6b7-4437-9293-3001053a1703",
+      "Flags": 0,
+      "Name": "money",
+      "Position": "-711.144,-1132.474,176.0333",
+      "Scale": "1.277954,1.277954,1.277954",
+      "Tags": "interact,money,grab",
+      "Enabled": true,
+      "NetworkMode": 1,
+      "OwnerTransfer": 0,
+      "__Prefab": "prefab/money.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "886a87a8-6b47-4036-a29b-d98c882b9af5",
+      "Flags": 0,
+      "Name": "money (1)",
+      "Position": "-696.8355,-1133.858,176.0333",
+      "Scale": "1.277954,1.277954,1.277954",
+      "Tags": "interact,money,grab",
+      "Enabled": true,
+      "NetworkMode": 1,
+      "OwnerTransfer": 0,
+      "__Prefab": "prefab/money.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "54c3f5fe-2a7f-4d9d-a910-23f4cf272ecb",
+      "Flags": 0,
+      "Name": "money (2)",
+      "Position": "-682.1949,-1134.138,176.0333",
+      "Scale": "1.277954,1.277954,1.277954",
+      "Tags": "interact,money,grab",
+      "Enabled": true,
+      "NetworkMode": 1,
+      "OwnerTransfer": 0,
+      "__Prefab": "prefab/money.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "2c093638-3ff7-43f7-8780-ae9e5d05974e",
+      "Flags": 0,
+      "Name": "money (3)",
+      "Position": "-669.0304,-1134.73,176.0333",
+      "Scale": "1.277954,1.277954,1.277954",
+      "Tags": "interact,money,grab",
+      "Enabled": true,
+      "NetworkMode": 1,
+      "OwnerTransfer": 0,
+      "__Prefab": "prefab/money.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {
@@ -2131,9 +2206,13 @@
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 60,
     "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
     "ThreadedAnimation": true,
     "TimeScale": 1,
     "UseFixedUpdate": true,
+    "Metadata": {
+      "Title": "minimal"
+    },
     "NavMesh": {
       "Enabled": false,
       "IncludeStaticBodies": true,
@@ -2147,13 +2226,13 @@
       "IncludedBodies": ""
     }
   },
+  "ResourceVersion": 2,
   "Title": "minimal",
-  "Description": "",
-  "ResourceVersion": 1,
+  "Description": null,
   "__references": [
-    "facepunch.fence_panel_large",
-    "tfassets.stairs_wood001a",
-    "titanovsky.sbox_atm"
+    "facepunch.fence_panel_large#44051",
+    "tfassets.stairs_wood001a#20809",
+    "titanovsky.sbox_atm#54292"
   ],
-  "__version": 1
+  "__version": 2
 }

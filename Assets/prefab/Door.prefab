@@ -38,7 +38,8 @@
         "Center": "0,-18.79998,43.10012",
         "IsTrigger": false,
         "Scale": "2.099964,36.40015,86.00031",
-        "Static": false
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
       },
       {
         "__type": "Sandbox.HighlightOutline",
@@ -61,7 +62,14 @@
             "__type": "Sandbox.ModelRenderer",
             "__guid": "1f59113c-d475-48d9-a702-548a5e5f361f",
             "BodyGroups": 18446744073709551615,
-            "Model": "models/darkrp_map/temp_door_001a.vmdl",
+            "CreateAttachments": false,
+            "Model": "models/dev/door/door_single_dev.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "0.23256,0.15583,0.0887,1"
           }
@@ -71,7 +79,7 @@
         "__guid": "8b3e3286-3749-4f35-8d43-a58dcea8cb12",
         "Flags": 0,
         "Name": "Panel (1)",
-        "Position": "-1.214411,-18.3967,56.29179",
+        "Position": "-1.866535,-24.49848,56.29179",
         "Rotation": "0,0,1,-0.00000004371139",
         "Enabled": true,
         "Components": [
@@ -82,6 +90,12 @@
             "InteractionRange": 1000,
             "LookAtCamera": false,
             "PanelSize": "512,512",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderScale": 1,
             "VerticalAlign": "Center"
           },
@@ -99,7 +113,7 @@
         "__guid": "02c41d63-7d0f-4433-ab3d-68dbe61ce2e2",
         "Flags": 0,
         "Name": "Panel",
-        "Position": "1.248956,-18.3967,56.29179",
+        "Position": "2.274994,-22.33141,56.29179",
         "Enabled": true,
         "Components": [
           {
@@ -109,6 +123,12 @@
             "InteractionRange": 1000,
             "LookAtCamera": false,
             "PanelSize": "512,512",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderScale": 1,
             "VerticalAlign": "Center"
           },
@@ -144,12 +164,38 @@
         ]
       }
     ],
-    "__variables": []
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
   },
   "ShowInMenu": false,
   "MenuPath": null,
   "MenuIcon": null,
+  "DontBreakAsTemplate": false,
   "ResourceVersion": 1,
-  "__references": [],
+  "__references": [
+    "facepunch.door_single_dev#57525"
+  ],
   "__version": 1
 }

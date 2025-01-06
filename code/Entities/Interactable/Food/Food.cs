@@ -43,7 +43,7 @@ public sealed class Food : BaseEntity
 	/// <summary>
 	/// Destroys the food entity after it has been collected.
 	/// </summary>
-	[Broadcast]
+	[Rpc.Broadcast]
 	public void DestroyFood()
 	{
 		this.GameObject.Destroy();
